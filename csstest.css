@@ -1,0 +1,42 @@
+/*
+セレクタ{プロパティ名: 値;}
+a, b
+a b
+a > b
+a + b
+ab
+
+*ユニバーサルセレクタ
+要素名 p h1 div
+#id
+.class
+
+ p {color: skyblue; }
+h1 {color: skyblue;}
+#first {color:orange;}
+.points {color:violet;}
+h1, p {color: skyblue;} */
+div span{color:blue;}
+/* p + p {color: skyblue; }
+p.points {color:skyblue;}
+
+属性セレクタ
+a[title] {color: skyblue;} */
+a[href="http://google.com"] {color:orange;}
+a[class="search"] {color:violet;}
+
+/* セレクタ　疑似クラス
+ul li:first-child {color:yellow;}
+
+a:link {color:violet;} 未訪問
+a:visited {color: orange;} 訪問済み
+a:hover{color:pink;} マウスが乗った時
+a:active{color:red;} クリックした時 */
+
+input:focus{background: skyblue;}
+
+/* セレクタ　疑似要素
+p:first-line {color:red;}
+p:first-letter {color:red;} 最初一文字だけ */
+p:before{content: "--> ";}
+p:after{content: " <--";}
